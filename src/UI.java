@@ -13,8 +13,11 @@ public class UI {
         total = read._readfile("src\\procesos.txt");
         System.out.println("Se han guardado tus datos de procesos");
         boolean salir = false;
-        System.out.println("\n\t El órden de las prioridades el el siguiente");
+        System.out.println("\n\t El órden de las prioridades es el siguiente");
+        System.out.println("Uso de árbol Heap creado por Catedrático");
         //Métódo de prioridades 
+        System.out.println("Uso de árbol Heap creado Java Collection Framework");
+        //Método de prioridades 
 
 }
 }
