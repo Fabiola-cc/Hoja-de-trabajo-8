@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class UI {
     static readFile read = new readFile();
     static Scanner sc = new Scanner(System.in);
-    static ArrayList<String> total = new ArrayList<>();
+    static ArrayList<proceso> total = new ArrayList<>();
     static Controlador1 cont1 = new Controlador1();
     static Controlador2 cont2 = new Controlador2();
 
@@ -19,8 +19,8 @@ public class UI {
         System.out.println("Se han guardado tus datos de procesos");
         System.out.println("\n\t El órden de las prioridades es el siguiente");
         //A los controladores le pasamos el array con el metodo agregar, lo que va hacer es guardar todos lo datos en el HEAP
-        cont1.agregar_proceso_a_HEAP(total);
-        cont2.agregar_proceso_a_HEAP(total);
+       // cont1.agregar_proceso_a_HEAP(total);
+        //cont2.agregar_proceso_a_HEAP(total);
 
         //Imprime los datos en orden del primer HEAP 
         System.out.println("Uso de árbol Heap creado por Catedrático");
