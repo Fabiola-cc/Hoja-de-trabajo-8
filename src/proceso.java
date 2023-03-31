@@ -1,8 +1,8 @@
 
-public class proceso implements Comparable<Integer> {
-    private String nombre_proceso;
-    private String usuario;
-    private int nice;
+public class proceso implements Comparable<proceso> {
+    private final String nombre_proceso;
+    private final String usuario;
+    private final int nice;
     private int priority;
 
     public proceso(String nombreProceso, String _usuario, int _nice) {
@@ -18,7 +18,8 @@ public class proceso implements Comparable<Integer> {
     }
 
     @Override
-    public int compareTo(Integer PR_Process) {
+    public int compareTo(proceso _Process) {
+        int PR_Process = _Process.getPriority();
         if (priority < PR_Process) {
             return -1;
         } else if (priority == PR_Process) {

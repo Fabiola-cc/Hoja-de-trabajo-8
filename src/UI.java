@@ -13,7 +13,7 @@ public class UI {
         total = read._readfile("src\\procesos.txt");
         System.out.println("Se han guardado tus datos de procesos");
         boolean salir = false;
-        System.out.println("\t El órden de las prioridades el el siguiente");
+        System.out.println("\n\t El órden de las prioridades el el siguiente");
         //Métódo de prioridades 
 
 }

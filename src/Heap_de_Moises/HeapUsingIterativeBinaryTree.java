@@ -2,8 +2,6 @@ package Heap_de_Moises;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-import IHeap;
-
 /**
  * 
  */
