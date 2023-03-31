@@ -18,15 +18,6 @@ public class Heap<E extends Comparable<E>> extends PriorityQueue<E> {
         this.data = new PriorityQueue<E>();
     }
 
-    public Heap(Vector<E> v) {
-        this.data = new PriorityQueue<E>(v.size());
-
-        for(int i = 0; i < v.size(); ++i) {
-            this.add((E) v.get(i));
-        }
-
-    }
-
     protected static int parent(int i) {
         return (i - 1) / 2;
     }
