@@ -1,7 +1,6 @@
 import java.util.ArrayList;
-import Heap_de_Moises.HeapUsingIterativeBinaryTree;
 
-public class Controlador1 implements ICreacion_heap{
+public class Controlador2 implements ICreacion_heap {
 
     @Override
     public void agregar_proceso_a_HEAP(ArrayList a) {
@@ -14,6 +13,5 @@ public class Controlador1 implements ICreacion_heap{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'imprimir_HEAp'");
     }
-
-
+    
 }
