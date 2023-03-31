@@ -15,6 +15,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
  */
 
 public class readFile {
+    static ArrayList<proceso> array_para_controlador;
 
     /**
      * Metodo que lee el documento con las operaciones Postfix y guarda los datos
@@ -23,10 +24,9 @@ public class readFile {
      * @param fpath Mensaje de lugar donde se encuentra el archivo datos.txt
      * @return data String
      */
-    public static ArrayList<String> _readfile(String fpath) {
-
+    public static ArrayList<proceso> _readfile(String fpath) {
+        array_para_controlador = new ArrayList<>();
         String data = "";
-        ArrayList<String> total = new ArrayList<>();
 
         try {
 
@@ -36,7 +36,7 @@ public class readFile {
             while (myReader.hasNextLine()) {
 
                 data = myReader.nextLine();
-                total.add(data);
+                dividir_elementos(data);
 
             }
             myReader.close();
@@ -45,7 +45,19 @@ public class readFile {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        return total;
+        return array_para_controlador;
+    }
+
+    private static void dividir_elementos(String informacion) {
+        String[] informacion_dividida = informacion.split(",");
+        String nombre_proceso = informacion_dividida[0];
+        String nombre_usuario = informacion_dividida[1];
+        int valor_nice = Integer.valueOf(informacion_dividida[2]);
+        proceso proceso_por_añadir = new proceso(nombre_proceso,nombre_usuario,valor_nice);
+
+        array_para_controlador.add(proceso_por_añadir);
     }
 }
+
+
 
