@@ -52,7 +52,7 @@ public class proceso implements Comparable<proceso> {
         return para_imprmir;
     }
     public String toString2() {
-        String para_imprmir = getNombre_proceso()+","+getUsuario()+","+getNice()+"PR = "+getPriority();
+        String para_imprmir = getNombre_proceso()+","+getUsuario()+","+getNice()+",PR = "+getPriority();
         return para_imprmir;
     }
 }

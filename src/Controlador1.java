@@ -22,16 +22,18 @@ public class Controlador1 implements ICreacion_heap<proceso>{
 
     @Override
     public void imprimir_HEAp() {
-        for (int i = 0; i < heap1.count(); i++) {
+        for (int i = 0; i < heap1.count(); i++) { //Imprime de manera ordenada los datos de cada proceso guardado en heap
             proceso temp = heap1.get();
-            System.out.println("temp.toString()");
+            System.out.println(temp.toString());
             System.out.println("");
         }
 
-        while(!heap1.isEmpty()){
+        System.out.println("\nFormato como el dado en txt");
+        while(!heap1.isEmpty()){ //Impresión de todos los datos con la estructura recibida en txt
             proceso temp = heap1.remove();
-            System.out.println("");//toString 2
+            System.out.println(temp.toString2());
         }
+        System.out.println();
 
     }
 

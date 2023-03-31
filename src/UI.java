@@ -19,7 +19,7 @@ public class UI {
         System.out.println("Se han guardado tus datos de procesos");
         System.out.println("\n\t El órden de las prioridades es el siguiente");
         //A los controladores le pasamos el array con el metodo agregar, lo que va hacer es guardar todos lo datos en el HEAP
-       // cont1.agregar_proceso_a_HEAP(total);
+        cont1.agregar_proceso_a_HEAP(total);
         //cont2.agregar_proceso_a_HEAP(total);
 
         //Imprime los datos en orden del primer HEAP 
@@ -29,6 +29,6 @@ public class UI {
         
         //Imprime los datos en orden del segundo HEAP 
         System.out.println("Uso de árbol Heap creado Java Collection Framework");
-        cont2.imprimir_HEAp();
+        //cont2.imprimir_HEAp();
 }
 }
