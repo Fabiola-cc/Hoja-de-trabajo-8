@@ -48,16 +48,20 @@ public class readFile {
         return array_para_controlador;
     }
 
+    /**
+     * 'dividir_elementos' se encarga de separar una cadena de información,
+     * permitiendo crear un objeto tipo proceso con esa información y guardarlo en
+     * el arraylist destinado para utilizar durante el programa.
+     * 
+     * @param informacion
+     */
     private static void dividir_elementos(String informacion) {
         String[] informacion_dividida = informacion.split(",");
         String nombre_proceso = informacion_dividida[0];
         String nombre_usuario = informacion_dividida[1];
         int valor_nice = Integer.valueOf(informacion_dividida[2]);
-        proceso proceso_por_añadir = new proceso(nombre_proceso,nombre_usuario,valor_nice);
+        proceso proceso_por_añadir = new proceso(nombre_proceso, nombre_usuario, valor_nice);
 
         array_para_controlador.add(proceso_por_añadir);
     }
 }
-
-
-

@@ -1,8 +1,11 @@
 import java.util.ArrayList;
-
-
 import Heap_de_Moises.HeapUsingIterativeBinaryTree;
 import Heap_de_Moises.ComparadorNumeros;
+
+/*
+* Esta clase implementa la interfaz 'ICreacion_heap' haciendo uso de los métodos del heap empleado en clase.
+* Se adapta al uso de esos métodos para el buen funcionamiento del programa.
+*/
 
 public class Controlador1 implements ICreacion_heap<proceso>{
     HeapUsingIterativeBinaryTree<Integer, proceso> heap1;
