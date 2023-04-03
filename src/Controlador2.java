@@ -17,14 +17,8 @@ public class Controlador2 implements ICreacion_heap <proceso>{
 
     @Override
     public void imprimir_HEAp() {
-        Stack<proceso> cola_para_ordenar = new Stack<>();
         for (proceso pr:heap2) {
-            cola_para_ordenar.push(pr);
-        }
-
-        while (cola_para_ordenar.isEmpty() == false) {
-            proceso temp = cola_para_ordenar.pop();
-            System.out.println(temp);
+            System.out.println(pr);
         }
 
         System.out.println("\n\tFormato establecido en txt");
