@@ -11,8 +11,6 @@ public class UI {
     /**
      * Da una estructura al programa, mostrando al usuario lo que está por ocurrir e
      * imprimiendo datos necesarios en pantalla.
-     * 
-     * @param args
      */
     public static void main(String[] args) {
         System.out.println("\nBienvenidos a la nueva distribución de Linux");
