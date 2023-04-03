@@ -1,6 +1,5 @@
-package Heap_alternativo;
+package Uso_alternativo;
 import java.util.PriorityQueue;
-import structure5.Vector;
 
 //
 // Source code recreated from a .class file by IntelliJ IDEA
@@ -11,10 +10,10 @@ import structure5.Vector;
 * Código original del libro JavaStructures librería bailey
 * Adaptado para utilizar la clase 'PriorityQueue<E>' de Java Collection Framework
 */
-public class Heap<E extends Comparable<E>> extends PriorityQueue<E> {
+public class Using_PriorityQueue<E extends Comparable<E>> extends PriorityQueue<E> {
     protected PriorityQueue<E> data;
 
-    public Heap() {
+    public Using_PriorityQueue() {
         this.data = new PriorityQueue<E>();
     }
 

@@ -1,11 +1,14 @@
-import Heap_alternativo.Heap;
+import Uso_alternativo.Using_PriorityQueue;
 import java.util.ArrayList;
-import java.util.Stack;
 
+/*
+ * Esta clase implementa la interfaz 'ICreacion_heap' haciendo uso de los métodos del heap empleando "PriorityQueue" de
+ * Java Collection Framework. Se adapta al uso de esos métodos para el buen funcionamiento del programa.
+ */
 public class Controlador2 implements ICreacion_heap <proceso>{
-    Heap<proceso> heap2 = new Heap<>();
+    Using_PriorityQueue<proceso> heap2 = new Using_PriorityQueue<>();
     Controlador2(){
-        heap2 = new Heap<>();
+        heap2 = new Using_PriorityQueue<>();
     }
 
     @Override
@@ -17,7 +20,7 @@ public class Controlador2 implements ICreacion_heap <proceso>{
 
     @Override
     public void imprimir_HEAp() {
-        for (proceso pr:heap2) {
+        for (proceso pr: heap2) {
             System.out.println(pr);
         }
 
