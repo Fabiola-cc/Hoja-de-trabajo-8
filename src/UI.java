@@ -29,11 +29,11 @@ public class UI {
         cont2.agregar_proceso_a_HEAP(total);
 
         // Imprime los datos en orden del primer HEAP
-        System.out.println("Uso de árbol Heap creado por Catedrático");
+        System.out.println("Uso de árbol Heap dado en el libro Java Structures");
         cont1.imprimir_HEAp();
 
         // Imprime los datos en orden del segundo HEAP
-        System.out.println("Uso de árbol Heap creado Java Collection Framework");
+        System.out.println("Uso de árbol Heap creado usando Java Collection Framework");
         cont2.imprimir_HEAp();
     }
 }

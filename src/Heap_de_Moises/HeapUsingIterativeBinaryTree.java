@@ -3,10 +3,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 /**
- * 
- */
-
-/**
  * @author moises.alonso
  *
  */
@@ -96,7 +92,7 @@ public class HeapUsingIterativeBinaryTree<P, V> implements IHeap<P, V> {
 				
 				int result = _priorityComparator.compare(actualNode.get_priority(), actualNode.get_parent().get_priority());
 				
-				if (result > 0) { //if child is greater than parent
+				if (result < 0) { //if child is greater than parent
 					P tempP = actualNode.get_priority();
 					V tempV = actualNode.get_value();
 					
