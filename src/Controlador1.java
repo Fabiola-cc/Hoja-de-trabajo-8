@@ -32,9 +32,9 @@ public class Controlador1 implements ICreacion_heap<proceso>{
             System.out.println(temp.toString());
         }
 
-        System.out.println("\nFormato establecido en txt");
+        System.out.println("\n\tFormato establecido en txt");
         for (String code: cadenas_impresion) {
-            System.out.println(code);
+            System.out.println("\t"+code);
         }
         System.out.println();
 
